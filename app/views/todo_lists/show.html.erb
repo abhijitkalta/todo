@@ -18,4 +18,5 @@
 </div>
 
 <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+<%= link_to 'Delete', todo_list_path(@todo_list), method: :delete, data: {confirm: "Are you sure you want to delete"} %> |
 <%= link_to 'Back', todo_lists_path %>
